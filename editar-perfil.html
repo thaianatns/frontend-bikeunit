@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--================================================================================
+  Item Name: Materialize - Material Design Admin Template
+  Version: 3.1
+  Author: GeeksLabs
+  Author URL: http://www.themeforest.net/user/geekslabs
+================================================================================ -->
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="description" content="Materialize is a Material Design Admin Template,It's modern, responsive and based on Material Design by Google. ">
+  <meta name="keywords" content="materialize, admin template, dashboard template, flat admin template, responsive admin template,">
+  <title>Editar Perfil</title>
+  <!-- Favicons-->
+  <link rel="icon" href="images/favicon/favicon-32x32.png" sizes="32x32">
+  <!-- Favicons-->
+  <link rel="apple-touch-icon-precomposed" href="images/favicon/apple-touch-icon-152x152.png">
+  <!-- For iPhone -->
+  <meta name="msapplication-TileColor" content="#00bcd4">
+  <meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png">
+  <!-- For Windows Phone -->
+  <!-- CORE CSS-->
+  <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="css/style.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <!-- Custome CSS-->
+  <link href="css/custom/custom.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <!-- INCLUDED PLUGIN CSS ON THIS PAGE -->
+  <link href="js/plugins/perfect-scrollbar/perfect-scrollbar.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="js/plugins/jvectormap/jquery-jvectormap.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="js/plugins/chartist-js/chartist.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <!-- Favicons-->
+  <link rel="icon" href="images/favicon/favicon-32x32.png" sizes="32x32">
+  <!-- Favicons-->
+  <link rel="apple-touch-icon-precomposed" href="images/favicon/apple-touch-icon-152x152.png">
+  <!-- For iPhone -->
+  <meta name="msapplication-TileColor" content="#00bcd4">
+  <meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png">
+  <!-- For Windows Phone -->
+  <!-- CORE CSS-->
+  <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="css/style.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <!-- Custome CSS-->
+  <link href="css/custom/custom.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <!-- INCLUDED PLUGIN CSS ON THIS PAGE -->
+  <link href="js/plugins/prism/prism.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="js/plugins/perfect-scrollbar/perfect-scrollbar.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="js/plugins/chartist-js/chartist.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="js/plugins/sweetalert/sweetalert.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <!--you can use custom css from js/plugins/sweetalert/themes/-->
+  <!--<link href="js/plugins/sweetalert/themes/google/google.css" type="text/css" rel="stylesheet" media="screen,projection">-->
+  <!-- Favicons-->
+  <link rel="icon" href="images/favicon/favicon-32x32.png" sizes="32x32">
+  <!-- Favicons-->
+  <link rel="apple-touch-icon-precomposed" href="images/favicon/apple-touch-icon-152x152.png">
+  <!-- For iPhone -->
+  <meta name="msapplication-TileColor" content="#00bcd4">
+  <meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png">
+  <!-- For Windows Phone -->
+  <!-- CORE CSS-->
+  <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="css/style.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <!-- Custome CSS-->
+  <link href="css/custom/custom.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <!-- INCLUDED PLUGIN CSS ON THIS PAGE -->
+  <link href="js/plugins/prism/prism.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="js/plugins/perfect-scrollbar/perfect-scrollbar.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="js/plugins/chartist-js/chartist.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <!--dropify-->
+  <link href="js/plugins/dropify/css/dropify.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+</head>
+
+<body>
+  <!-- //////////////////////////////////////////////////////////////////////////// -->
+  <!-- START HEADER -->
+  <header id="header" class="page-topbar">
+    <!-- start header nav-->
+    <div class="navbar-fixed">
+      <nav class="navbar-color">
+        <div class="nav-wrapper">
+          <ul class="left">
+            <li>
+              <h1 class="logo-wrapper"><a href="index.html" class="brand-logo darken-1"><img src="images/materialize-logo.png" alt="materialize logo"></a> <span class="logo-text">Materialize</span></h1>
+            </li>
+          </ul>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="javascript:void(0);" class="waves-effect waves-block waves-light notification-button" data-activates="notifications-dropdown"><i class="mdi-social-notifications"><small class="notification-badge">4</small></i>
+                        
+                        </a>
+            </li>
+          </ul>
+          <!-- notificações -->
+          <ul id="notifications-dropdown" class="dropdown-content">
+            <li>
+              <h5>Notificações <span class="novas">4</span></h5>
+            </li>
+            <li class="divider"></li>
+            <li> <a href="#!"><i class="mdi-social-person-add"></i> Você recebeu solicitação de novo membro</a>
+              <time class="media-meta" datetime="2015-06-12T20:50:48+08:00">Há 2 horas</time>
+            </li>
+            <li> <a href="#!"><i class="mdi-action-thumb-up"></i> Membros Confirmaram presença em pedais</a>
+              <time class="media-meta" datetime="2015-06-12T20:50:48+08:00">Há 3 dias</time>
+            </li>
+            <li> <a href="#!"><i class="mdi-action-thumb-down"></i> Membros cancelaram presença em pedais</a>
+              <time class="media-meta" datetime="2015-06-12T20:50:48+08:00">Há 3 dias</time>
+            </li>
+            <li> <a href="#!"><i class="mdi-action-markunread-mailbox"></i> Você recebeu convite de Eventos Interpedais</a>
+              <time class="media-meta" datetime="2015-06-12T20:50:48+08:00">Há 4 dias</time>
+            </li>
+            <li> <a href="#!"><i class="mdi-content-drafts"></i> Grupos aceitaram seu convite para Evento Interpedal</a>
+              <time class="media-meta" datetime="2015-06-12T20:50:48+08:00">Há 4 dias</time>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- fim de notificações-->
+  </header>
+  <!-- END HEADER -->
+  <!-- //////////////////////////////////////////////////////////////////////////// -->
+  <!-- START MAIN -->
+  <div id="main">
+    <!-- START WRAPPER -->
+    <div class="wrapper">
+      <!-- MENU-->
+      <aside id="left-sidebar-nav">
+        <ul id="slide-out" class="side-nav fixed leftside-navigation">
+          <li class="user-details cyan darken-2">
+            <div class="row">
+              <div class="col col s4 m4 l4">
+                <img src="images/thaiana.jpg" alt="" class="circle responsive-img valign profile-image">
+              </div>
+              <div class="col col s8 m8 l8">
+                <ul id="profile-dropdown" class="dropdown-content">
+                  <li><a href="#"><i class="mdi-action-face-unlock"></i> Perfil</a>
+                  </li>
+                  <li><a href="#"><i class="mdi-action-assignment-ind"></i>Dados</a>
+                  </li>
+                  <li class="divider"></li>
+                  <li><a href="#"><i class="mdi-hardware-keyboard-tab"></i>Sair</a>
+                </ul> <a class="btn-flat dropdown-button waves-effect waves-light white-text profile-btn" href="#" data-activates="profile-dropdown">Thaiana Sousa<i class="mdi-navigation-arrow-drop-down right"></i></a> 
+              </div>
+            </div>
+            </li>
+            <li class="bold">
+              <a href="home-administrador-1.html" class="waves-effect waves-cyan"> <i class="mdi-maps-local-library"></i> Home Administrador</a>
+            </li>
+            <li class="no-padding"></li>
+            <li class="no-padding">
+              <ul class="collapsible collapsible-accordion">
+                <li class="bold">
+                  <a class="collapsible-header waves-effect waves-cyan"> <i class="mdi-maps-directions-bike"></i> Criar grupo de Pedal</a>
+                </li>
+                <li class="bold">
+                  <a href="perfil-usuario-com-grupo.html" class="waves-effect waves-cyan"> <i class="mdi-action-account-circle"></i>Voltar Perfil Usuário</a>
+                </li>
+              </ul>
+            </li>
+        </ul> <a href="#" data-activates="slide-out" class="sidebar-collapse btn-floating btn-medium waves-effect waves-light hide-on-large-only cyan"><i class="mdi-navigation-menu"></i></a>
+      </aside>
+      <!-- //////////////////////////////////////////////////////////////////////////// -->
+      <!-- START CONTENT -->
+      <section id="content">
+        <!--breadcrumbs start-->
+        <div id="breadcrumbs-wrapper">
+          <!-- Search for small screen -->
+          <div class="container">
+            <div class="row">
+              <div class="col s12 m12 l12">
+                <h5 class="breadcrumbs-title">Perfil Usuário</h5>
+                <ol class="breadcrumbs">
+                  <li> <a href="home-app.html">Bikeunit</a>
+                  </li>
+                  <li class="active">Editar Perfil</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--breadcrumbs end-->
+        <!--start container-->
+        <div class="container">
+          <div class="section">
+            <!--inicio formulário-->
+            <div class="row">
+              <div class="col s12 m12 l12">
+                <div class="card-panel">
+                  <div class="row">
+                    <form class="col s12">
+                      <h4 class="header2">Editando Perfil</h4>
+                      <div class="row">
+                        <div class="input-field col s4">
+                          <h6>Foto Perfil</h6>
+                          <div class="col s12 m8 l9">
+                            <input type="file" id="input-file-now" class="dropify" data-default-file="" />
+                          </div>
+                        </div>
+                        <div class="input-field col s4"> <i class="mdi-action-account-circle prefix"></i>
+                          <input id="icon_prefix" type="text" class="validate">
+                          <label for="icon_prefix">Nome</label>
+                        </div>
+                        <div class="input-field col s4"> <i class="mdi-social-cake prefix"></i>
+                          <input placeholder="01/01/2015" id="date-demo2" type="text" class="">
+                          <label for="date_demo2">Data de Nascimento</label>
+                        </div>
+                        <div class="input-field col s4">
+                          <div class="col s12 m8 l9">
+                            <form action="#">
+                              <input name="group1" type="radio" id="test1" />
+                              <label for="test1">Homem</label>
+                              <input name="group1" type="radio" id="test1" />
+                              <label for="test1">Mulher</label>
+                            </form>
+                          </div>
+                        </div>
+                        <div class="input-field col s4"> <i class="mdi-communication-phone prefix"></i>
+                          <input id="icon_telephone" type="tel" class="validate">
+                          <label for="icon_telephone">Tel</label>
+                        </div>
+                        <h6> Em caso de Emergência, seria bom que o Administrador dos Grupos que você for participar, soubesse com quem entrar em contato.(Não é Obrigatório)</h6>
+                        <div class="input-field col s4"> <i class="mdi-communication-phone prefix"></i>
+                          <input id="icon_telephone" type="tel" class="validate">
+                          <label for="icon_telephone">Tel de Emergência</label>
+                        </div>
+                        <div class="input-field col s4"> <i class="mdi-action-account-circle prefix"></i>
+                          <input id="icon_prefix" type="text" class="validate">
+                          <label for="icon_prefix">Falar Com</label>
+                        </div>
+                        <div class="row">
+                          <div class="input-field col s12">
+                            <button class="btn cyan waves-effect waves-light right" type="submit" name="action">Confirmar <i class="mdi-content-send right"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Form with validation -->
+            <!--fim formulário-->
+          </div>
+        </div>
+      </section>
+      <!-- END CONTENT -->
+      <!-- START FOOTER -->
+      <footer class="page-footer">
+        <div class="footer-copyright">
+          <div class="container"> <span>Copyright © 2015 <a class="grey-text text-lighten-4" href="http://themeforest.net/user/geekslabs/portfolio?ref=geekslabs" target="_blank">GeeksLabs</a> All rights reserved.</span>
+            <span class="right"> Design and Developed by <a class="grey-text text-lighten-4" href="http://geekslabs.com/">GeeksLabs</a></span>
+          </div>
+        </div>
+      </footer>
+      <!-- END FOOTER -->
+      <!-- ================================================
+    Scripts
+    ================================================ -->
+      <!-- jQuery Library -->
+      <script type="text/javascript" src="js/plugins/jquery-1.11.2.min.js"></script>
+      <!--angularjs-->
+      <script type="text/javascript" src="js/plugins/angular.min.js"></script>
+      <!--materialize js-->
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <!--prism -->
+      <script type="text/javascript" src="js/plugins/prism/prism.js"></script>
+      <!--scrollbar-->
+      <script type="text/javascript" src="js/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+      <!-- chartist -->
+      <script type="text/javascript" src="js/plugins/chartist-js/chartist.min.js"></script>
+      <!--sweetalert -->
+      <script type="text/javascript" src="js/plugins/sweetalert/sweetalert.min.js"></script>
+      <!--plugins.js - Some Specific JS codes for Plugin Settings-->
+      <script type="text/javascript" src="js/plugins.min.js"></script>
+      <!--custom-script.js - Add your own theme custom JS-->
+      <script type="text/javascript" src="js/custom-script.js"></script>
+      <script type="text/javascript">
+        $(document).ready(function(){
+                                        "use strict";
+                                        
+                                        $('.btn-message').click(function(){
+                                          swal("Here's a message!");
+                                        });
+                                        
+                                        $('.btn-title-text').click(function(){
+                                          swal("Here's a message!", "It's pretty, isn't it?")
+                                        });
+                                
+                                        $('.btn-timer').click(function(){
+                                          swal({
+                                            title: "Auto close alert!",
+                                            text: "I will close in 2 seconds.",
+                                            timer: 2000,
+                                            showConfirmButton: false
+                                          });
+                                        });
+                                        
+                                        $('.btn-success').click(function(){
+                                          swal("Confirmada presença!", "Seu nome entrou na lista para esse pedal! ", "success");
+                                        });
+                                        
+                                        $('.btn-warning-confirm').click(function(){
+                                          swal({
+                                            title: "Você tem ceteza?",
+                                            text: "Seu nome será retirado da lista",
+                                            type: "warning",
+                                            showCancelButton: true,
+                                            confirmButtonColor: '#DD6B55',
+                                            confirmButtonText: 'Sim, quero tirar meu nome da lista!',
+                                            closeOnConfirm: false
+                                          },
+                                          function(){
+                                            swal("Excluído!", "Você cancelou presença nesse pedal", "success");
+                                          });
+                                        });
+                                        
+                                        $('.btn-warning-cancel').click(function(){
+                                          swal({
+                                            title: "Você tem certeza?",
+                                            text: "Seu nome sairá da lista para esse pedal!",
+                                            type: "warning",
+                                            showCancelButton: true,
+                                            confirmButtonColor: '#DD6B55',
+                                            confirmButtonText: 'sim, pode tirar meu nome da lista!',
+                                            cancelButtonText: "Continuar no pedal!",
+                                            closeOnConfirm: false,
+                                            closeOnCancel: false
+                                          },
+                                          function(isConfirm){
+                                            if (isConfirm){
+                                              swal("Excluido!", "Você cancelou presença nesse pedal!", "success");
+                                            } else {
+                                              swal("Cancelamento Abortado", "Que bom que você optou por comparecer :)", "error");
+                                            }
+                                          });
+                                        });
+                                
+                                        $('.btn-warning-cancel-sair-do-grupo').click(function(){
+                                          swal({
+                                            title: "Você tem certeza?",
+                                            text: "você realmente deseja sair desse grupo?",
+                                            type: "warning",
+                                            showCancelButton: true,
+                                            confirmButtonColor: '#DD6B55',
+                                            confirmButtonText: 'sim, quero sair desse grupo!',
+                                            cancelButtonText: "Continuar no grupo!",
+                                            closeOnConfirm: false,
+                                            closeOnCancel: false
+                                          },
+                                          function(isConfirm){
+                                            if (isConfirm){
+                                              swal("Excluido!", "Você saiu desse grupo.", "success");
+                                            } else {
+                                              swal("Exclusão Abortada", "Que bom que você optou por permanecer no grupo :)", "error");
+                                            }
+                                          });
+                                        });
+                                        
+                                        $('.btn-custom-icon').click(function(){
+                                          swal({
+                                            title: "Sweet!",
+                                            text: "Here's a custom image.",
+                                            imageUrl: 'images/favicon/apple-touch-icon-152x152.png'
+                                          });
+                                        });
+                                        
+                                        $('.btn-message-html').click(function(){
+                                          swal({
+                                            title: "HTML <small>Title</small>!",
+                                            text: 'A custom <span style="color:#F8BB86">html<span> message.',
+                                            html: true
+                                          });
+                                        });
+                                        
+                                        $('.btn-input').click(function(){
+                                          swal({
+                                            title: "An input!",
+                                            text: 'Write something interesting:',
+                                            type: 'input',
+                                            showCancelButton: true,
+                                            closeOnConfirm: false,
+                                            animation: "slide-from-top",
+                                            inputPlaceholder: "Write something",
+                                          },
+                                          function(inputValue){
+                                            if (inputValue === false) return false;
+                                        
+                                            if (inputValue === "") {
+                                              swal.showInputError("You need to write something!");
+                                              return false;
+                                            }
+                                            
+                                            swal("Nice!", 'You wrote: ' + inputValue, "success");
+                                        
+                                          });
+                                        });
+                                        
+                                        $('.btn-theme').click(function(){
+                                          swal({
+                                            title: "Themes!",
+                                            text: "Here's the Twitter theme for SweetAlert!",
+                                            confirmButtonText: "Cool!",
+                                            customClass: 'twitter'
+                                          });
+                                        });
+                                        
+                                        $('.btn-ajax').click(function(){
+                                          swal({
+                                            title: 'Tem certeza que deseja sair desse grupo?',
+                                            text: 'Se sair, para entrar novamente terá que enviar outra solicitação.',
+                                            type: 'info',
+                                            showCancelButton: true,
+                                            closeOnConfirm: false,
+                                            showLoaderOnConfirm: true,
+                                          }, function(){
+                                            setTimeout(function() {
+                                              swal('Você saiu desse grupo!');
+                                            }, 2000);
+                                          });
+                                        });
+                                        
+                                    });
+      </script>
+      <script type="text/javascript" src="js/plugins/jquery-1.11.2.min.js"></script>
+      <!--angularjs-->
+      <script type="text/javascript" src="js/plugins/angular.min.js"></script>
+      <!--materialize js-->
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <!--prism -->
+      <script type="text/javascript" src="js/plugins/prism/prism.js"></script>
+      <!--scrollbar-->
+      <script type="text/javascript" src="js/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+      <!-- chartist -->
+      <script type="text/javascript" src="js/plugins/chartist-js/chartist.min.js"></script>
+      <!-- dropify -->
+      <script type="text/javascript" src="js/plugins/dropify/js/dropify.min.js"></script>
+      <!--plugins.js - Some Specific JS codes for Plugin Settings-->
+      <script type="text/javascript" src="js/plugins.min.js"></script>
+      <!--custom-script.js - Add your own theme custom JS-->
+      <script type="text/javascript" src="js/custom-script.js"></script>
+      <script type="text/javascript">
+        $(document).ready(function(){
+                                            // Basic
+                                            $('.dropify').dropify();
+                                
+                                            // Translated
+                                            $('.dropify-fr').dropify({
+                                                messages: {
+                                                    default: 'Glissez-déposez un fichier ici ou cliquez',
+                                                    replace: 'Glissez-déposez un fichier ou cliquez pour remplacer',
+                                                    remove:  'Supprimer',
+                                                    error:   'Désolé, le fichier trop volumineux'
+                                                }
+                                            });
+                                
+                                            // Used events
+                                            var drEvent = $('.dropify-event').dropify();
+                                
+                                            drEvent.on('dropify.beforeClear', function(event, element){
+                                                return confirm("Do you really want to delete \"" + element.filename + "\" ?");
+                                            });
+                                
+                                            drEvent.on('dropify.afterClear', function(event, element){
+                                                alert('File deleted');
+                                            });
+                                        });
+      </script>
+</body>
+
+</html>
